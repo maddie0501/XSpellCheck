@@ -31,7 +31,7 @@ function App() {
     } else {
       setSuggesttext("");
     }
-  };  // note: if multiple then to make a array of all and show same 
+  }; // note: if multiple then to make a array of all and show same
 
   return (
     <div>
@@ -46,7 +46,7 @@ function App() {
         className="text"
       />
 
-      {input && (
+      {input && suggesttext && (
         <p>
           Did you mean: <strong>{suggesttext}</strong>?
         </p>
